@@ -1,0 +1,194 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    margin-left:5em;
+    margin-right: 5em;
+    .home,.login,.registrieren{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .change-passw{
+      fieldset{
+        background-color: blue;
+        border-radius: 1em;
+      
+        label{
+          color:white;
+          padding:0.5em;
+          width: 15em;
+         
+        }
+        div{
+          color:white;
+         
+        }
+        button{
+          margin:0.5em;
+          background-color: white;
+          border:none;
+          color:blue;
+        }
+      }
+      input{
+        margin:0.5em;
+      }
+    }
+    .solicitude{
+      table{
+        background-color: blue;
+        color:white;
+        th{
+          padding: 0.5em;
+        }
+        tr{
+          border:1px white solid;
+        }
+        td{
+          padding: 0.5em;
+        }
+      }
+    }
+    .edit-user{
+      fieldset{
+        background-color: blue;
+        border-radius: 1em;
+      
+        label{
+          color:white;
+          padding:0.5em;
+          width: 5em;
+         
+        }
+        div{
+          color:white;
+          border:1px solid white;
+        }
+        button{
+          margin:0.5em;
+          background-color: white;
+          border:none;
+          color:blue;
+        }
+      }
+      
+    }
+    .registrieren{
+        .div-notValided{
+            color:red;
+        }
+        sub{
+            font-size: 0.7em;
+        }
+    }
+    .input-password{
+        display: flex;
+
+    }
+    .input-login{
+        display: flex;
+    }
+.header{
+   display: flex;
+   justify-content:space-between;
+   .nav{
+    .nav--ul{
+        list-style: none;
+        display: flex;
+        padding-left: 0px;
+
+        li{
+            a{
+                color:blue;
+            }
+        }
+      
+      }
+   }
+   .userLogged{
+       margin-right: 32px;
+       margin-top: 8px;
+       button{
+           margin:0.5em;
+           color:white;
+           border:0px;
+
+       }
+       button:hover{
+           border: 1px blue solid;
+       }
+       span{
+           color:blue;
+           margin:0.5em;
+       }
+   }
+}
+ 
+
+  }
+  .admin table tr{
+    border: 2px blue solid;
+  }
+  .admin table thead th{
+    color:white;
+    background-color: blue;
+    padding:0.5em;
+  }
+  
+  .admin table td{
+    border: 2px blue solid;
+    padding:0.5em;
+  }
+  
+  .nav--ul li{
+    margin: 0.5em;
+  }
+  .nav--ul li a{ 
+    text-decoration: none;
+  }
+  .registrieren .icon-valided{
+    color:green;
+    background-color:white;
+    border-radius:30px;
+    width: 28px;
+    height: 28px;
+    margin-left: 0.5em;
+    
+  }
+  
+  form{
+     
+    height: 25vh;
+    width: 25vw;
+  }
+  .div-button
+  {
+    margin:1em;
+    margin-left: 0;
+  }
+  
+  .input-password input{
+    border:1px solid gray;
+    border-right: 0;
+    width: 240px;
+    
+   
+
+}
+input:focus{
+    outline: none;
+}
+.icon-eye1{
+    
+    border-left: 0px;
+    border-right: 1px gray solid;
+    border-top:1px gray solid;
+    border-bottom: 1px gray solid;
+    height:30px;
+    
+
+
+}
+.icon-eye1:hover{
+    cursor: pointer;
+}
