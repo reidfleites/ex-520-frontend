@@ -5,10 +5,8 @@ function ChangePassword() {
   const [newPassw, setNewPassw] = useState("");
   const [altePassw,setAltePassw]=useState("");
   const [confirmedPasswd,setConfirmedPasswd]=useState("");
-  const [paswValided, setPassValided] = useState(false);
+  const [setPassValided] = useState(false);
   const [currentUser] = useContext(AppContext);
-
-  const [message,setMessage]=useState('');
   const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
   const handlePassword = (e) => {
@@ -65,7 +63,7 @@ function ChangePassword() {
         <input type="text" onChange={handleConfirmPassword} value={confirmedPasswd}/>
         <div>
           <button onClick={setNewPassword}>change Password</button>
-          {message}
+          
         </div>
         </fieldset>
       </form>

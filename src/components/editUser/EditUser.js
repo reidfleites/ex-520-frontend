@@ -10,7 +10,7 @@ function EditUser() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [login, setLogin] = useState("");
-  const [currentUser,setCurrentUser] = useContext(AppContext);
+  const [setCurrentUser] = useContext(AppContext);
 
   const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
