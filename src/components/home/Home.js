@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useContext, useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import { useState,useContext, useEffect } from "react";
+
 import {FaUserAlt} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
 import {AppContext} from "../context/AppContext";
