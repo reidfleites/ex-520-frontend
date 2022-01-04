@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import {  useState,useEffect } from "react";
+import {  useState } from "react";
 
 import {FaUserAlt} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
