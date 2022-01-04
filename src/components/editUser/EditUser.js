@@ -79,6 +79,7 @@ function EditUser() {
       const user = await response.json();
       setUser(prev=> ({ ...prev, ...user }));
       console.log(user);
+      console.log(currentUser);
       
       
     }
