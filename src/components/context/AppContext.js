@@ -12,7 +12,7 @@ import { useEffect } from 'react';
     
     useEffect(()=>{
         (async()=>{
-            const response=await fetch(`${backendUrl}/currentUser`,{method:"GET",credentials:"include"});
+            const response=await fetch(`${process.env.REACT_APP_BACKEND_URL}/currentUser`,{method:"GET",credentials:"include"});
             const data=await response.json();
             setCurrentUser(prev=>({prev,...data}));
            
