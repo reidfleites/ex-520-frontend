@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useContext } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import { AppContext } from "../context/AppContext";
 
 function EditUser() {
