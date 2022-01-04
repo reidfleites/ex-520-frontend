@@ -86,7 +86,7 @@ function EditUser() {
   };
 
   useEffect(() => {
-    fetchData();
+    setUser(prev=>({...prev,currentUser}));
   }, []);
 
   return (
