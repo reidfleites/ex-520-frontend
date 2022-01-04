@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useState, useContext } from "react";
+import { useState} from "react";
+import { useContext } from "react";
 import { useEffect } from "react";
 import { AppContext } from "../context/AppContext";
 
@@ -10,7 +11,7 @@ function EditUser() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [login, setLogin] = useState("");
-  const [setCurrentUser] = useContext(AppContext);
+  const [currentUser,setCurrentUser] = useContext(AppContext);
 
   
 

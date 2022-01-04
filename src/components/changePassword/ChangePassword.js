@@ -1,6 +1,7 @@
-import { useState,useContext } from "react/cjs/react.development";
+import  {useState,useContext} from "react";
 import { istPasswValided } from "../validation/Validation";
 import {AppContext} from "../context/AppContext";
+import { useContext } from "react";
 function ChangePassword() {
   const [newPassw, setNewPassw] = useState("");
   const [altePassw,setAltePassw]=useState("");
@@ -25,7 +26,7 @@ function ChangePassword() {
   }
   const setNewPassword = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${backendUrl}/changepassword`, {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/changepassword`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
