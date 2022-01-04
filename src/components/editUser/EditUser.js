@@ -129,7 +129,7 @@ function EditUser() {
         </div>
         <div>
           <button onClick={editNewUser}>edit</button>{" "}
-          <button onClick={saveNewUser}>save</button>
+         {edition && (<button onClick={saveNewUser}>save</button>)} 
         </div>
         </fieldset>
       </form>

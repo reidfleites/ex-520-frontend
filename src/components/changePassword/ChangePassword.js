@@ -1,21 +1,25 @@
-import  {useState,useContext} from "react";
-import { istPasswValided } from "../validation/Validation";
+import  {useState} from "react";
 import {AppContext} from "../context/AppContext";
 import { useContext } from "react";
+import { istPasswValided } from "../validation/Validation";
 function ChangePassword() {
   const [newPassw, setNewPassw] = useState("");
   const [altePassw,setAltePassw]=useState("");
   const [confirmedPasswd,setConfirmedPasswd]=useState("");
-  const [setPassValided] = useState(false);
+  const [passValided,setPassValided] = useState(false);
   const [currentUser] = useContext(AppContext);
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  
 
   const handlePassword = (e) => {
+    
     const ipassw = e.target.value;
-    setPassValided(istPasswValided(ipassw));
+    const valided=(istPasswValided(ipassw));
+    console.log(valided);
+    setPassValided(true);
     setNewPassw(ipassw);
   };
   const handleAltePassword = (e) => {
+    
     const ipassw = e.target.value;
     setAltePassw(ipassw);
   };
