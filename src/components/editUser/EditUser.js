@@ -78,6 +78,8 @@ function EditUser() {
     if (response.ok) {
       const user = await response.json();
       setUser(prev=> ({ ...prev, ...user }));
+      console.log(user);
+      
       
     }
   };
