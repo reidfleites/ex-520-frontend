@@ -32,7 +32,7 @@ function Registriren() {
   const [passw,setPassw]=useState(false);
   const [passw2,setPassw2]=useState(false);
 
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  
 
   const handleLogin = (e) => {
     let iLogin = e.target.value;

@@ -10,7 +10,7 @@ import NotAprovedUser from "../notAprovedUsers/NotAprovedUser";
 function Home(){
     const [users,setUsers]=useState([]);
     const [currentUser] = useContext(AppContext);
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    
 
     
     

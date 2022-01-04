@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import {  useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import {  useEffect,useEffect } from "react";
+
 import {FaUserAlt} from "react-icons/fa";
 import {MdEmail} from "react-icons/md";
 
@@ -8,7 +8,7 @@ import {MdEmail} from "react-icons/md";
 function Users(){
   const [users,setUsers]=useState([]);
    
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    
 
     
     

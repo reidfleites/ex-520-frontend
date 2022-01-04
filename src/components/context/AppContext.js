@@ -7,7 +7,7 @@ import { useEffect } from 'react';
  
  const MyProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState({});
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    
 
     
     useEffect(()=>{

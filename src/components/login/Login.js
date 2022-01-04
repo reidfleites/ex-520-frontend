@@ -10,7 +10,7 @@ function Login() {
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  
   const [currentUser, setCurrentUser] = useContext(AppContext);
 
   const handleLogin = (e) => {
