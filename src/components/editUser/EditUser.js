@@ -12,7 +12,7 @@ function EditUser() {
   const [login, setLogin] = useState("");
   const [setCurrentUser] = useContext(AppContext);
 
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+  
 
   const handleName = (e) => {
     const iname = e.target.value;
