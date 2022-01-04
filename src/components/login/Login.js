@@ -28,7 +28,7 @@ function Login() {
   };
   const handleButton = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${backendUrl}/login`, {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/login`, {
       method: "POST",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
