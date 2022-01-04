@@ -112,7 +112,7 @@ function Registriren() {
 
   const handleButton = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${backendUrl}/signup`, {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/signup`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials:"include",

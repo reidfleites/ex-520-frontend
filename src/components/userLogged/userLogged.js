@@ -11,7 +11,7 @@ function UserLogged(){
 
     const logout =async()=>{
         console.log("loggedOut");
-        const response=await fetch(`${backendUrl}/logout`,{method:"GET",credentials:"include"});
+        const response=await fetch(`${process.env.REACT_APP_BACKEND_URL}/logout`,{method:"GET",credentials:"include"});
        
           const user=await response.json();
           if(response.ok){

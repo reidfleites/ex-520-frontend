@@ -13,14 +13,14 @@ function Users(){
     
     
 const fetchData=async()=>{
-        const response = await fetch(`${backendUrl}/getAllUsers`);
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/getAllUsers`);
 		const bdUsers = await response.json();
 		setUsers(bdUsers);
         
 }
 
 const deleteUser=async(login)=>{
-  await fetch(`http://localhost:3011/deleteUser`,
+  await fetch(`${process.env.REACT_APP_BACKEND_URL}/deleteUser`,
   {method:"DELETE",credentials:"include",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({

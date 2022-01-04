@@ -5,7 +5,7 @@ function Solicitude() {
   const [notApprovedUsers, setNotApprovedUsers] = useState([]);
 
   const fetchData = async () => {
-    const response = await fetch(`http://localhost:3011/notApprovedUser`, {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/notApprovedUser`, {
       method: "GET",
       credentials: "include",
     });
@@ -15,7 +15,7 @@ function Solicitude() {
   };
 
   const acceptUser = async (login) => {
-    await fetch(`http://localhost:3011/acceptUser`, {
+    await fetch(`${process.env.REACT_APP_BACKEND_URL}/acceptUser`, {
       method: "PATCH",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
@@ -29,7 +29,7 @@ function Solicitude() {
   };
 
   const deleteUser = async (login) => {
-    await fetch(`http://localhost:3011/deleteUser`, {
+    await fetch(`${process.env.REACT_APP_BACKEND_URL}/deleteUser`, {
       method: "DELETE",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
