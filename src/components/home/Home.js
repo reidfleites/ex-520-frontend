@@ -15,7 +15,7 @@ function Home(){
     
     
 const fetchData=async()=>{
-        const response = await fetch(`${backendUrl}/getMembers`);
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/getMembers`);
 		const bdUsers = await response.json();
 		setUsers(bdUsers);
         
