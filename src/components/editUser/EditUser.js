@@ -41,7 +41,7 @@ function EditUser() {
   };
   const saveNewUser = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${backendUrl}/editUser`, {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/editUser`, {
       method: "PATCH",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
@@ -70,7 +70,7 @@ function EditUser() {
     setLogin(user.login);
   };
   const fetchData = async () => {
-    const response = await fetch(`${backendUrl}/currentUser`, {
+    const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/currentUser`, {
       method: "GET",
       credentials: "include"
     });
